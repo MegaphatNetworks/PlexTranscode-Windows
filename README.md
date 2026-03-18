@@ -12,7 +12,7 @@ Of course, the C:\PlexScripts is how I configured mine. Also the scripts are har
 This is the file that initiates the whole scripting process by creating temporary file names and a work space to start the conversion process. It creates a log file and then launches the next batch file.
 
 2-TV-Post-Convert.bat
-This script begins HandbrakeCLI with the required parameters.
+This script begins HandbrakeCLI with the required parameters.  Please note the REM comment lines.  Currently it is configured to use a GPU but if you have none, please make the appropriate changes.
 
 3-TV-Post-Cleanup.bat
 This script finishes by cleaning up the temp files created as well as the .ts file. It also tells PMS to update the media library.
