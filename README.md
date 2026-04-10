@@ -1,8 +1,11 @@
 # PlexTranscode-Windows
-Automatic Transcoding for Plex Media Server using Handbrake-CLI
 
-I used C:\PlexScripts to store the batch files.
-You will need to create a subfolder called C:\PlexScripts\Data to store your log files.
+NOTE: This repository is old.  I updated my methodology and created a new repository called [Plex-Post-Recording-Transcode-for-Windows-v2](https://github.com/MegaphatNetworks/Plex-Post-Recording-Transcode-for-Windows-v2).  This newer version uses ffmpeg along with powershell.  This current one only uses DOS Batch files and feels a bit archaic, but it was written years ago just to try and save space from HDHomeRun and Plex only saving my media in very large .ts files.  Even tho this version attempts to reencode in MKV, it's still not very efficient.   So let's get on with the old stuff!
+
+Post-Recording Transcoding Script for Plex Media Server using Handbrake-CLI
+
+Since Plex requires you to store all scripts in the %LOCALAPPDATA%\Plex Media Server\Scripts folder, you should too.
+If you want to maintain log files, you will need to create a subfolder called C:\PlexScripts\Data to store your log files, or modify the first file to indicate your log file path.
 
 Only 1 script 1-TV-Post-Record.bat will need to be configured in PMS in order to have this work. But you will need to download and install HandBrakeCLI 4  (or higher) to perform the conversion. To configure the script in PMS, in your PMS, click Settings, go to Live TV & DVR. Click on DVR Settings. Scroll down to PostProcessing Script and enter C:\PlexScripts\1-TV-Post-Record.bat
 
